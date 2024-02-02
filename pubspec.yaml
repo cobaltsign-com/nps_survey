@@ -1,7 +1,7 @@
 name: nps_survey
 repository: https://github.com/cobaltsign-com/nps_survey
 description: A Flutter component designed to collect Net Promoter Scores (NPS) from users.
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: '>=3.1.3 <4.0.0'
