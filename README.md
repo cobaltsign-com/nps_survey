@@ -19,7 +19,7 @@ A Flutter component designed to collect Net Promoter Scores (NPS) from users.
 
 ![Example from iOS](https://github.com/cobaltsign-com/nps_survey/blob/main/doc/demo.gif?raw=true)
 
-## Instalation
+## Installation
 
 ```
 flutter pub add nps_survey

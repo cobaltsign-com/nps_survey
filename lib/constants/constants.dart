@@ -16,6 +16,7 @@ class SizeConstants {
   static const double maxHeightFirstPage = 305;
 
   static const double standardBorderRadius = 10.0;
+
   /// Used for the buttons and selector dot
   static const double roundBorderRadius = 50.0;
 }
@@ -91,19 +92,25 @@ class DefaultStringValues {
   /// Detractor question default
   static const String detractorsQuestionDefault =
       "We're truly sorry to hear that. What key improvements would make our app a 10 for you?";
+
   /// Passive question default
   static const String passivesQuestionDefault =
       "We're glad to hear this. What could we improve to get a 10 at the previous question?";
+
   /// Promoter question default
   static const String promotersQuestionDefault =
       "Wow, that's great to hear! We would love to know what's the main reason for your high score:";
+
   /// Survey question deafult
   static const String surveyQuestionDefault =
       "How likely are you to recommend our app to a friend or a family member?";
+
   /// Submit button text default
   static const String submitButtonDefault = "SUBMIT";
+
   /// Bottom left text default
   static const String bottomLeftText = "0 - Not likely";
+
   /// Bottom right text default
   static const String bottomRightText = "10 - Very likely";
 }

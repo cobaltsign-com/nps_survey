@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Fixed a typo
+
 ## 1.0.2
 
 - Minor formatting and comment updates
