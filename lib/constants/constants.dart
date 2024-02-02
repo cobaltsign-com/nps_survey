@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-// Size constants
+/// Size constants
 class SizeConstants {
-  // General
+  /// General
   static const double paddingValue2 = 2.0;
   static const double paddingValue10 = 10.0;
   static const double paddingValue15 = 15.0;
@@ -16,11 +16,11 @@ class SizeConstants {
   static const double maxHeightFirstPage = 305;
 
   static const double standardBorderRadius = 10.0;
-  // Used for the buttons and selector dot
+  /// Used for the buttons and selector dot
   static const double roundBorderRadius = 50.0;
 }
 
-// Color constants
+/// Color constants
 class DesignColors {
   static const Color defaultColor = Color(0xFFF2631B);
   static const Color greyLight = Color(0xFFEFEFEF);
@@ -35,9 +35,9 @@ class DesignColors {
   static Color npsColor = defaultColor;
 }
 
-// Default text styles
+/// Default text styles
 class DefaultTextStyles {
-  // Body large
+  /// Body large
   static TextStyle get bodyLargeBoldGrey => const TextStyle(
       fontStyle: FontStyle.normal,
       color: DesignColors.grey5,
@@ -45,7 +45,7 @@ class DefaultTextStyles {
       fontWeight: FontWeight.w500,
       letterSpacing: -0.02);
 
-  // Body small
+  /// Body small
   static TextStyle get bodySmallGrey => const TextStyle(
       fontStyle: FontStyle.normal,
       color: DesignColors.grey5,
@@ -53,7 +53,7 @@ class DefaultTextStyles {
       fontWeight: FontWeight.w300,
       letterSpacing: -0.02);
 
-  // Body regular
+  /// Body regular
   static TextStyle get bodyRegularWhite => const TextStyle(
       fontStyle: FontStyle.normal,
       color: DesignColors.white,
@@ -61,11 +61,11 @@ class DefaultTextStyles {
       fontWeight: FontWeight.normal,
       letterSpacing: -0.02);
 
-  // Input text
+  /// Input text
   static TextStyle get inputText => const TextStyle(color: DesignColors.grey6);
 }
 
-// General styling for buttons, input fields and container
+/// General styling for buttons, input fields and container
 class DefaultStyles {
   static BoxDecoration submitButtonStyle = BoxDecoration(
       borderRadius: const BorderRadius.all(
@@ -86,24 +86,24 @@ class DefaultStyles {
       borderRadius: BorderRadius.circular(SizeConstants.standardBorderRadius));
 }
 
-// Placeholder texts
+/// Placeholder texts
 class DefaultStringValues {
-  // Detractor question default
+  /// Detractor question default
   static const String detractorsQuestionDefault =
       "We're truly sorry to hear that. What key improvements would make our app a 10 for you?";
-  // Passive question default
+  /// Passive question default
   static const String passivesQuestionDefault =
       "We're glad to hear this. What could we improve to get a 10 at the previous question?";
-  // Promoter question default
+  /// Promoter question default
   static const String promotersQuestionDefault =
       "Wow, that's great to hear! We would love to know what's the main reason for your high score:";
-  // Survey question deafult
+  /// Survey question deafult
   static const String surveyQuestionDefault =
       "How likely are you to recommend our app to a friend or a family member?";
-  // Submit button text default
+  /// Submit button text default
   static const String submitButtonDefault = "SUBMIT";
-  // Bottom left text default
+  /// Bottom left text default
   static const String bottomLeftText = "0 - Not likely";
-  // Bottom right text default
+  /// Bottom right text default
   static const String bottomRightText = "10 - Very likely";
 }
