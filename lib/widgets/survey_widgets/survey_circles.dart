@@ -9,7 +9,8 @@ class SurveyCircles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: SizeConstants.paddingValue10),
+      padding:
+          const EdgeInsets.symmetric(horizontal: SizeConstants.paddingValue10),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -31,7 +32,8 @@ class SurveyCircles extends StatelessWidget {
           Transform.translate(
             offset: const Offset(0.0, -8),
             child: Padding(
-              padding: const EdgeInsets.only(bottom: SizeConstants.paddingValue20),
+              padding:
+                  const EdgeInsets.only(bottom: SizeConstants.paddingValue20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

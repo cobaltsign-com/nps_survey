@@ -21,7 +21,8 @@ class SelectorDot extends StatelessWidget {
           width: SizeConstants.paddingValue50,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(SizeConstants.roundBorderRadius),
+              borderRadius:
+                  BorderRadius.circular(SizeConstants.roundBorderRadius),
               color: DesignColors.npsColor),
           child: Padding(
             padding: const EdgeInsets.all(SizeConstants.paddingValue10),

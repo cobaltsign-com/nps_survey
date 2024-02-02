@@ -66,8 +66,8 @@ class _NPSSurveyDialogState extends State<NPSSurveyDialog> {
     return AlertDialog(
         contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
         alignment: Alignment.center,
-        insetPadding:
-            const EdgeInsets.symmetric(horizontal: SizeConstants.paddingValue10),
+        insetPadding: const EdgeInsets.symmetric(
+            horizontal: SizeConstants.paddingValue10),
         shape: RoundedRectangleBorder(
             borderRadius: widget.dialogContainerStyle?.borderRadius ??
                 const BorderRadius.all(

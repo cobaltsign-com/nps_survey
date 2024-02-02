@@ -68,8 +68,8 @@ class DefaultTextStyles {
 // General styling for buttons, input fields and container
 class DefaultStyles {
   static BoxDecoration submitButtonStyle = BoxDecoration(
-      borderRadius:
-          const BorderRadius.all(Radius.circular(SizeConstants.roundBorderRadius)),
+      borderRadius: const BorderRadius.all(
+          Radius.circular(SizeConstants.roundBorderRadius)),
       color: DesignColors.npsColor);
   static InputDecoration feedbackInputStyle = const InputDecoration(
       contentPadding: EdgeInsets.symmetric(
