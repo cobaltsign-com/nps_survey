@@ -11,7 +11,11 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-## Features
+# nps_survey
+
+A Flutter component designed to collect Net Promoter Scores (NPS) from users.
+
+## Example
 
 //TODO
 
@@ -23,17 +27,23 @@ flutter pub add nps_survey
 
 ## Usage
 
-Call
+Import the library:
+
+```
+import 'package:nps_survey/nps_survey.dart';
+```
+
+Display the dialog by calling:
 
 ```dart
-   NPSSurvey().showNPSDialog(
-          context: context,
-          callback: (feedback, score) {
-              print(feedback);
-              print(score);
+NPSSurvey().showNPSDialog(
+    context: context,
+      callback: (feedback, score) {
+        print(feedback);
+        print(score);
     });
 ```
 
-to display the NPS dialog.
+
 
 
