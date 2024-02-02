@@ -26,7 +26,12 @@ flutter pub add nps_survey
 Call
 
 ```dart
-NPSSurvey().showNPSDialog();
+   NPSSurvey().showNPSDialog(
+          context: context,
+          callback: (feedback, score) {
+              print(feedback);
+              print(score);
+    });
 ```
 
 to display the NPS dialog.
