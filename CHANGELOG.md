@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Minor formatting and comment updates
+
 ## 1.0.1
 
 - Updated readme
