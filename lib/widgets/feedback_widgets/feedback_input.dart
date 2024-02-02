@@ -16,13 +16,13 @@ class FeedbackInput extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.symmetric(
-            horizontal: Constants.paddingValue20,
-            vertical: Constants.paddingValue30),
+            horizontal: SizeConstants.paddingValue20,
+            vertical: SizeConstants.paddingValue30),
         child: Container(
-          height: Constants.feedbackHeight,
+          height: SizeConstants.feedbackHeight,
           decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(
-                  Radius.circular(Constants.standardBorderRadius))),
+                  Radius.circular(SizeConstants.standardBorderRadius))),
           child: TextField(
             onChanged: (value) => feedbackResponse(value),
             maxLines: null,

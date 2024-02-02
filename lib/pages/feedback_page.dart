@@ -40,9 +40,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
   Widget build(BuildContext context) {
     return Container(
         decoration:
-            widget.dialogContainerStyle ?? DefaultStyles.containerDefultStyle,
+            widget.dialogContainerStyle ?? DefaultStyles.containerDefaultStyle,
         alignment: Alignment.center,
-        width: MediaQuery.of(context).size.width - Constants.paddingValue20,
+        width: MediaQuery.of(context).size.width - SizeConstants.paddingValue20,
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,

@@ -19,11 +19,11 @@ class SurveyFooter extends StatelessWidget {
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.5 -
-              Constants.paddingValue20,
+              SizeConstants.paddingValue20,
           child: Padding(
             padding: const EdgeInsets.symmetric(
-                vertical: Constants.paddingValue10,
-                horizontal: Constants.paddingValue20),
+                vertical: SizeConstants.paddingValue10,
+                horizontal: SizeConstants.paddingValue20),
             child: Text(
               bottomLeftText ?? DefaultStringValues.bottomLeftText,
               style: bottomTextsStyle ?? DefaultTextStyles.bodySmallGrey,
@@ -34,11 +34,11 @@ class SurveyFooter extends StatelessWidget {
         ),
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.5 -
-              Constants.paddingValue20,
+              SizeConstants.paddingValue20,
           child: Padding(
             padding: const EdgeInsets.symmetric(
-                vertical: Constants.paddingValue10,
-                horizontal: Constants.paddingValue20),
+                vertical: SizeConstants.paddingValue10,
+                horizontal: SizeConstants.paddingValue20),
             child: Text(
               bottomRightText ?? DefaultStringValues.bottomRightText,
               style: bottomTextsStyle ?? DefaultTextStyles.bodySmallGrey,

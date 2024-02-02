@@ -27,10 +27,10 @@ class FeedbackFooter extends StatelessWidget {
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            horizontal: Constants.paddingValue20,
-            vertical: Constants.paddingValue15),
+            horizontal: SizeConstants.paddingValue20,
+            vertical: SizeConstants.paddingValue15),
         child: Container(
-          height: Constants.paddingValue40,
+          height: SizeConstants.paddingValue40,
           decoration: submitButtonStyle ?? DefaultStyles.submitButtonStyle,
           child: Center(
               child: Text(

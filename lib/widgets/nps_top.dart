@@ -13,15 +13,15 @@ class NpsTop extends StatelessWidget {
       decoration: const BoxDecoration(
           color: Colors.transparent,
           borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(Constants.standardBorderRadius),
-              topRight: Radius.circular(Constants.standardBorderRadius))),
+              topLeft: Radius.circular(SizeConstants.standardBorderRadius),
+              topRight: Radius.circular(SizeConstants.standardBorderRadius))),
       child: Center(
           child: Column(
         children: [
           Align(
             alignment: Alignment.topRight,
             child: Padding(
-              padding: const EdgeInsets.all(Constants.paddingValue10),
+              padding: const EdgeInsets.all(SizeConstants.paddingValue10),
               child: GestureDetector(
                 onTap: () {
                   Navigator.of(context).pop();
@@ -29,14 +29,14 @@ class NpsTop extends StatelessWidget {
                 child: Icon(
                   Icons.clear,
                   color: DesignColors.npsColor,
-                  size: Constants.paddingValue20,
+                  size: SizeConstants.paddingValue20,
                 ),
               ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(Constants.paddingValue30, 0,
-                Constants.paddingValue30, Constants.paddingValue10),
+            padding: const EdgeInsets.fromLTRB(SizeConstants.paddingValue30, 0,
+                SizeConstants.paddingValue30, SizeConstants.paddingValue10),
             child: Text(
               question,
               style: questionTextStyle ?? DefaultTextStyles.bodyLargeBoldGrey,

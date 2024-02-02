@@ -26,9 +26,9 @@ class SurveyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: dialogContainerStyle ?? DefaultStyles.containerDefultStyle,
+        decoration: dialogContainerStyle ?? DefaultStyles.containerDefaultStyle,
         alignment: Alignment.center,
-        width: MediaQuery.of(context).size.width - Constants.paddingValue20,
+        width: MediaQuery.of(context).size.width - SizeConstants.paddingValue20,
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,

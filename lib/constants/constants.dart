@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Constants {
+// Size constants
+class SizeConstants {
+  // General
   static const double paddingValue2 = 2.0;
   static const double paddingValue10 = 10.0;
   static const double paddingValue15 = 15.0;
@@ -14,9 +16,11 @@ class Constants {
   static const double maxHeightFirstPage = 305;
 
   static const double standardBorderRadius = 10.0;
+  // Used for the buttons and selector dot
   static const double roundBorderRadius = 50.0;
 }
 
+// Color constants
 class DesignColors {
   static const Color defaultColor = Color(0xFFF2631B);
   static const Color greyLight = Color(0xFFEFEFEF);
@@ -31,7 +35,9 @@ class DesignColors {
   static Color npsColor = defaultColor;
 }
 
+// Default text styles
 class DefaultTextStyles {
+  // Body large
   static TextStyle get bodyLargeBoldGrey => const TextStyle(
       fontStyle: FontStyle.normal,
       color: DesignColors.grey5,
@@ -39,6 +45,7 @@ class DefaultTextStyles {
       fontWeight: FontWeight.w500,
       letterSpacing: -0.02);
 
+  // Body small
   static TextStyle get bodySmallGrey => const TextStyle(
       fontStyle: FontStyle.normal,
       color: DesignColors.grey5,
@@ -46,6 +53,7 @@ class DefaultTextStyles {
       fontWeight: FontWeight.w300,
       letterSpacing: -0.02);
 
+  // Body regular
   static TextStyle get bodyRegularWhite => const TextStyle(
       fontStyle: FontStyle.normal,
       color: DesignColors.white,
@@ -53,39 +61,49 @@ class DefaultTextStyles {
       fontWeight: FontWeight.normal,
       letterSpacing: -0.02);
 
+  // Input text
   static TextStyle get inputText => const TextStyle(color: DesignColors.grey6);
 }
 
+// General styling for buttons, input fields and container
 class DefaultStyles {
   static BoxDecoration submitButtonStyle = BoxDecoration(
       borderRadius:
-          const BorderRadius.all(Radius.circular(Constants.roundBorderRadius)),
+          const BorderRadius.all(Radius.circular(SizeConstants.roundBorderRadius)),
       color: DesignColors.npsColor);
   static InputDecoration feedbackInputStyle = const InputDecoration(
       contentPadding: EdgeInsets.symmetric(
-          horizontal: Constants.paddingValue10,
-          vertical: Constants.paddingValue2),
+          horizontal: SizeConstants.paddingValue10,
+          vertical: SizeConstants.paddingValue2),
       filled: true,
       fillColor: DesignColors.grey0,
       border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.all(
-              Radius.circular(Constants.standardBorderRadius))));
-  static BoxDecoration containerDefultStyle = BoxDecoration(
+              Radius.circular(SizeConstants.standardBorderRadius))));
+  static BoxDecoration containerDefaultStyle = BoxDecoration(
       color: DesignColors.grey1,
-      borderRadius: BorderRadius.circular(Constants.standardBorderRadius));
+      borderRadius: BorderRadius.circular(SizeConstants.standardBorderRadius));
 }
 
+// Placeholder texts
 class DefaultStringValues {
+  // Detractor question default
   static const String detractorsQuestionDefault =
       "We're truly sorry to hear that. What key improvements would make our app a 10 for you?";
+  // Passive question default
   static const String passivesQuestionDefault =
       "We're glad to hear this. What could we improve to get a 10 at the previous question?";
+  // Promoter question default
   static const String promotersQuestionDefault =
       "Wow, that's great to hear! We would love to know what's the main reason for your high score:";
+  // Survey question deafult
   static const String surveyQuestionDefault =
       "How likely are you to recommend our app to a friend or a family member?";
+  // Submit button text default
   static const String submitButtonDefault = "SUBMIT";
+  // Bottom left text default
   static const String bottomLeftText = "0 - Not likely";
+  // Bottom right text default
   static const String bottomRightText = "10 - Very likely";
 }

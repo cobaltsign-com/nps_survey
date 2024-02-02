@@ -67,16 +67,16 @@ class _NPSSurveyDialogState extends State<NPSSurveyDialog> {
         contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
         alignment: Alignment.center,
         insetPadding:
-            const EdgeInsets.symmetric(horizontal: Constants.paddingValue10),
+            const EdgeInsets.symmetric(horizontal: SizeConstants.paddingValue10),
         shape: RoundedRectangleBorder(
             borderRadius: widget.dialogContainerStyle?.borderRadius ??
                 const BorderRadius.all(
-                    Radius.circular(Constants.standardBorderRadius))),
+                    Radius.circular(SizeConstants.standardBorderRadius))),
         content: SingleChildScrollView(
           physics: const NeverScrollableScrollPhysics(),
           child: Container(
             decoration: widget.dialogContainerStyle ??
-                DefaultStyles.containerDefultStyle,
+                DefaultStyles.containerDefaultStyle,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: surveyResponseNumber !=

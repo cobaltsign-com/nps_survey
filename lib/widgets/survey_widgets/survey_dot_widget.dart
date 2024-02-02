@@ -15,16 +15,16 @@ class SelectorDot extends StatelessWidget {
         selectNumber(number);
       },
       child: Padding(
-        padding: const EdgeInsets.all(Constants.paddingValue2),
+        padding: const EdgeInsets.all(SizeConstants.paddingValue2),
         child: Container(
-          height: Constants.paddingValue50,
-          width: Constants.paddingValue50,
+          height: SizeConstants.paddingValue50,
+          width: SizeConstants.paddingValue50,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(Constants.roundBorderRadius),
+              borderRadius: BorderRadius.circular(SizeConstants.roundBorderRadius),
               color: DesignColors.npsColor),
           child: Padding(
-            padding: const EdgeInsets.all(Constants.paddingValue10),
+            padding: const EdgeInsets.all(SizeConstants.paddingValue10),
             child: Text(
               "$number",
               style: DefaultTextStyles.bodyRegularWhite,
