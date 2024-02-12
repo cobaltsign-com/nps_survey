@@ -20,23 +20,43 @@ class FeedbackFooter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        callback(feedbackResponse, surveyResponse);
-        Navigator.of(context).pop();
-      },
-      child: Padding(
-        padding: const EdgeInsets.symmetric(
-            horizontal: SizeConstants.paddingValue20,
-            vertical: SizeConstants.paddingValue15),
-        child: Container(
-          height: SizeConstants.paddingValue40,
-          decoration: submitButtonStyle ?? DefaultStyles.submitButtonStyle,
-          child: Center(
-              child: Text(
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+          horizontal: SizeConstants.paddingValue20,
+          vertical: SizeConstants.paddingValue15),
+      child: Container(
+        height: SizeConstants.paddingValue46,
+        width: MediaQuery.of(context).size.width - SizeConstants.paddingValue20,
+        decoration: submitButtonStyle ?? DefaultStyles.submitButtonStyle,
+        child: TextButton(
+          onPressed: () {
+            callback(feedbackResponse, surveyResponse);
+            Navigator.of(context).pop();
+          },
+          style: ButtonStyle(
+            backgroundColor:
+                MaterialStateProperty.all<Color>(Colors.transparent),
+            overlayColor: MaterialStateProperty.resolveWith<Color?>(
+              (Set<MaterialState> states) {
+                if (states.contains(MaterialState.pressed)) {
+                  return DesignColors.grey7.withOpacity(0.2);
+                }
+                return null;
+              },
+            ),
+            foregroundColor: MaterialStateProperty.resolveWith<Color>(
+              (Set<MaterialState> states) {
+                if (states.contains(MaterialState.pressed)) {
+                  return DesignColors.white.withOpacity(0.5);
+                }
+                return DesignColors.white;
+              },
+            ),
+          ),
+          child: Text(
             submitButtonText ?? DefaultStringValues.submitButtonDefault,
-            style: submitButtonTextStyle ?? DefaultTextStyles.bodyRegularWhite,
-          )),
+            style: submitButtonTextStyle ?? DefaultTextStyles.bodyLargeRegular,
+          ),
         ),
       ),
     );
