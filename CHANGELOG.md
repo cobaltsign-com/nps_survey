@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Improved touch responsiveness and submit button style
+
 ## 1.0.3
 
 - Fixed a typo
