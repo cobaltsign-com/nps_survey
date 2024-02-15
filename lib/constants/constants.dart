@@ -10,6 +10,7 @@ class SizeConstants {
   static const double paddingValue30 = 30.0;
   static const double paddingValue40 = 40.0;
   static const double paddingValue45 = 45.0;
+  static const double paddingValue46 = 46.0;
   static const double paddingValue50 = 50.0;
 
   static const double feedbackHeight = 150.0;
@@ -25,7 +26,8 @@ class SizeConstants {
 class DesignColors {
   static const Color defaultColor = Color(0xFFF2631B);
   static const Color greyLight = Color(0xFFEFEFEF);
-  static const Color white = Color(0xFFffffff);
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color grey7 = Color(0xFF2B2B2F);
   static const Color grey6 = Color(0xFF2F2B2B);
   static const Color grey5 = Color(0xFF534F4E);
   static const Color grey4 = Color(0xFF767170);
@@ -55,11 +57,17 @@ class DefaultTextStyles {
       letterSpacing: -0.02);
 
   /// Body regular
-  static TextStyle get bodyRegularWhite => const TextStyle(
+  static TextStyle get bodyRegular => const TextStyle(
       fontStyle: FontStyle.normal,
-      color: DesignColors.white,
       fontSize: 14,
       fontWeight: FontWeight.normal,
+      letterSpacing: -0.02);
+
+  /// Body large
+  static TextStyle get bodyLargeRegular => const TextStyle(
+      fontStyle: FontStyle.normal,
+      fontSize: 17,
+      fontWeight: FontWeight.w400,
       letterSpacing: -0.02);
 
   /// Input text
