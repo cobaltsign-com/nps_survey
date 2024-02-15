@@ -57,9 +57,8 @@ class DefaultTextStyles {
       letterSpacing: -0.02);
 
   /// Body regular
-  static TextStyle get bodyRegularWhite => const TextStyle(
+  static TextStyle get bodyRegular => const TextStyle(
       fontStyle: FontStyle.normal,
-      // color: DesignColors.white,
       fontSize: 14,
       fontWeight: FontWeight.normal,
       letterSpacing: -0.02);

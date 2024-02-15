@@ -51,7 +51,7 @@ class SelectorDot extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
               "$number",
-              style: DefaultTextStyles.bodyRegularWhite,
+              style: DefaultTextStyles.bodyRegular,
             ),
           ),
         ),
