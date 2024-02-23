@@ -22,7 +22,8 @@ class NPSSurveyDialog extends StatefulWidget {
       this.submitButtonTextStyle,
       this.feedbackInputTextStyle,
       this.submitButtonStyle,
-      this.feedbackInputStyle});
+      this.feedbackInputStyle,
+      this.selectedScoreVisible});
 
   final Function(String, int) callback;
 
@@ -45,6 +46,8 @@ class NPSSurveyDialog extends StatefulWidget {
 
   final BoxDecoration? submitButtonStyle;
   final InputDecoration? feedbackInputStyle;
+
+  final bool? selectedScoreVisible;
 
   @override
   State<NPSSurveyDialog> createState() => _NPSSurveyDialogState();
@@ -83,27 +86,28 @@ class _NPSSurveyDialogState extends State<NPSSurveyDialog> {
                       -1 // The user completed the survey selecting a number
                   ? <Widget>[
                       FeedbackPage(
-                        dialogContainerStyle: widget.dialogContainerStyle,
-                        question: surveyResponseNumber >= 0 &&
-                                surveyResponseNumber <= 6
-                            ? widget.detractorsQuestionText ??
-                                DefaultStringValues.detractorsQuestionDefault
-                            : surveyResponseNumber >= 7 &&
-                                    surveyResponseNumber <= 8
-                                ? widget.passivesQuestionText ??
-                                    DefaultStringValues.passivesQuestionDefault
-                                : widget.promotersQuestionText ??
-                                    DefaultStringValues
-                                        .promotersQuestionDefault,
-                        questionsTextStyle: widget.feedbackQuestionsTextStyle,
-                        callback: widget.callback,
-                        surveyResponseNumber: surveyResponseNumber,
-                        submitButtonText: widget.submitButtonText,
-                        submitButtonTextStyle: widget.submitButtonTextStyle,
-                        submitButtonStyle: widget.submitButtonStyle,
-                        feedbackInputStyle: widget.feedbackInputStyle,
-                        feedbackInputTextStyle: widget.feedbackInputTextStyle,
-                      )
+                          dialogContainerStyle: widget.dialogContainerStyle,
+                          question: surveyResponseNumber >= 0 &&
+                                  surveyResponseNumber <= 6
+                              ? widget.detractorsQuestionText ??
+                                  DefaultStringValues.detractorsQuestionDefault
+                              : surveyResponseNumber >= 7 &&
+                                      surveyResponseNumber <= 8
+                                  ? widget.passivesQuestionText ??
+                                      DefaultStringValues
+                                          .passivesQuestionDefault
+                                  : widget.promotersQuestionText ??
+                                      DefaultStringValues
+                                          .promotersQuestionDefault,
+                          questionsTextStyle: widget.feedbackQuestionsTextStyle,
+                          callback: widget.callback,
+                          surveyResponseNumber: surveyResponseNumber,
+                          submitButtonText: widget.submitButtonText,
+                          submitButtonTextStyle: widget.submitButtonTextStyle,
+                          submitButtonStyle: widget.submitButtonStyle,
+                          feedbackInputStyle: widget.feedbackInputStyle,
+                          feedbackInputTextStyle: widget.feedbackInputTextStyle,
+                          selectedScoreVisible: widget.selectedScoreVisible)
                     ]
                   : [
                       SurveyPage(

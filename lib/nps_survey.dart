@@ -9,6 +9,7 @@ class NPSSurvey {
       required Function(String, int) callback,
       Color? generalColor,
       BoxDecoration? dialogContainerStyle,
+      bool? selectedScoreVisible,
       String? surveyQuestionText,
       String? surveyBottomLeftText,
       String? surveyBottomRightText,
@@ -43,7 +44,8 @@ class NPSSurvey {
             feedbackQuestionsTextStyle: feedbackQuestionsTextStyle,
             submitButtonTextStyle: submitButtonTextStyle,
             feedbackInputTextStyle: feedbackInputTextStyle,
-            submitButtonStyle: submitButtonStyle);
+            submitButtonStyle: submitButtonStyle,
+            selectedScoreVisible: selectedScoreVisible);
       },
     );
   }

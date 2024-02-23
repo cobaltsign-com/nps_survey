@@ -107,14 +107,14 @@ class DefaultStringValues {
 
   /// Promoter question default
   static const String promotersQuestionDefault =
-      "Wow, that's great to hear! We would love to know what's the main reason for your high score:";
+      "Wow, that's great to hear! We would love to know what's the main reason for your high score?";
 
   /// Survey question deafult
   static const String surveyQuestionDefault =
       "How likely are you to recommend our app to a friend or a family member?";
 
   /// Submit button text default
-  static const String submitButtonDefault = "SUBMIT";
+  static const String submitButtonDefault = "Submit";
 
   /// Bottom left text default
   static const String bottomLeftText = "0 - Not likely";
