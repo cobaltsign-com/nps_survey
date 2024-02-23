@@ -1,3 +1,7 @@
+## 1.1.0
+
+- Added optional value to display previously submitted score on the second screen.
+
 ## 1.0.4
 
 - Improved touch responsiveness and submit button style
