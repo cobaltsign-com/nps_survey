@@ -45,7 +45,8 @@ class NPSSurvey {
             submitButtonTextStyle: submitButtonTextStyle,
             feedbackInputTextStyle: feedbackInputTextStyle,
             submitButtonStyle: submitButtonStyle,
-            selectedScoreVisible: selectedScoreVisible);
+            selectedScoreVisible: selectedScoreVisible,
+            feedbackInputStyle: feedbackInputStyle);
       },
     );
   }
