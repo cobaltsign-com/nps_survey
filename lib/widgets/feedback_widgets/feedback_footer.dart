@@ -35,18 +35,18 @@ class FeedbackFooter extends StatelessWidget {
           },
           style: ButtonStyle(
             backgroundColor:
-                MaterialStateProperty.all<Color>(Colors.transparent),
-            overlayColor: MaterialStateProperty.resolveWith<Color?>(
-              (Set<MaterialState> states) {
-                if (states.contains(MaterialState.pressed)) {
+            WidgetStateProperty.all<Color>(Colors.transparent),
+            overlayColor: WidgetStateProperty.resolveWith<Color?>(
+              (Set<WidgetState> states) {
+                if (states.contains(WidgetState.pressed)) {
                   return DesignColors.grey7.withOpacity(0.2);
                 }
                 return null;
               },
             ),
-            foregroundColor: MaterialStateProperty.resolveWith<Color>(
-              (Set<MaterialState> states) {
-                if (states.contains(MaterialState.pressed)) {
+            foregroundColor: WidgetStateProperty.resolveWith<Color>(
+              (Set<WidgetState> states) {
+                if (states.contains(WidgetState.pressed)) {
                   return DesignColors.white.withOpacity(0.5);
                 }
                 return DesignColors.white;
