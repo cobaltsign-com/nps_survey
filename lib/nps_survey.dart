@@ -1,5 +1,3 @@
-library nps_survey;
-
 import 'package:flutter/material.dart';
 import 'package:nps_survey/widgets/nps_survey_dialog.dart';
 
