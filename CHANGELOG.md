@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Added missing feedbackInputStyle.
+
 ## 1.1.0
 
 - Added optional value to display previously submitted score on the second screen.
