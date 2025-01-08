@@ -23,12 +23,11 @@ class SelectorDot extends StatelessWidget {
           style: ButtonStyle(
             padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
                 const EdgeInsets.all(SizeConstants.paddingValue10)),
-            backgroundColor:
-            WidgetStateProperty.all<Color>(Colors.transparent),
+            backgroundColor: WidgetStateProperty.all<Color>(Colors.transparent),
             overlayColor: WidgetStateProperty.resolveWith<Color?>(
               (Set<WidgetState> states) {
                 if (states.contains(WidgetState.pressed)) {
-                  return DesignColors.grey7.withOpacity(0.2);
+                  return DesignColors.grey7.withValues(alpha: 0.2);
                 }
                 return null;
               },
@@ -36,7 +35,7 @@ class SelectorDot extends StatelessWidget {
             foregroundColor: WidgetStateProperty.resolveWith<Color>(
               (Set<WidgetState> states) {
                 if (states.contains(WidgetState.pressed)) {
-                  return DesignColors.white.withOpacity(0.5);
+                  return DesignColors.white.withValues(alpha: 0.5);
                 }
                 return DesignColors.white;
               },
