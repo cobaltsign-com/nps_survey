@@ -1,3 +1,7 @@
+## 1.2.1
+
+- Replaced deprecated `withOpacity` usage with `withValues` method.
+
 ## 1.2.0
 
 - Added missing feedbackInputStyle.
