@@ -55,6 +55,7 @@ class NPSSurveyDialog extends StatefulWidget {
 
 class _NPSSurveyDialogState extends State<NPSSurveyDialog> {
   int surveyResponseNumber = -1;
+  int pageIndex = 0;
 
   @override
   void initState() {
@@ -82,32 +83,34 @@ class _NPSSurveyDialogState extends State<NPSSurveyDialog> {
                 DefaultStyles.containerDefaultStyle,
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: surveyResponseNumber !=
-                      -1 // The user completed the survey selecting a number
+              children: pageIndex == 1
                   ? <Widget>[
                       FeedbackPage(
-                          dialogContainerStyle: widget.dialogContainerStyle,
-                          question: surveyResponseNumber >= 0 &&
-                                  surveyResponseNumber <= 6
-                              ? widget.detractorsQuestionText ??
-                                  DefaultStringValues.detractorsQuestionDefault
-                              : surveyResponseNumber >= 7 &&
-                                      surveyResponseNumber <= 8
-                                  ? widget.passivesQuestionText ??
-                                      DefaultStringValues
-                                          .passivesQuestionDefault
-                                  : widget.promotersQuestionText ??
-                                      DefaultStringValues
-                                          .promotersQuestionDefault,
-                          questionsTextStyle: widget.feedbackQuestionsTextStyle,
-                          callback: widget.callback,
-                          surveyResponseNumber: surveyResponseNumber,
-                          submitButtonText: widget.submitButtonText,
-                          submitButtonTextStyle: widget.submitButtonTextStyle,
-                          submitButtonStyle: widget.submitButtonStyle,
-                          feedbackInputStyle: widget.feedbackInputStyle,
-                          feedbackInputTextStyle: widget.feedbackInputTextStyle,
-                          selectedScoreVisible: widget.selectedScoreVisible)
+                        dialogContainerStyle: widget.dialogContainerStyle,
+                        question: surveyResponseNumber >= 0 &&
+                                surveyResponseNumber <= 6
+                            ? widget.detractorsQuestionText ??
+                                DefaultStringValues.detractorsQuestionDefault
+                            : surveyResponseNumber >= 7 &&
+                                    surveyResponseNumber <= 8
+                                ? widget.passivesQuestionText ??
+                                    DefaultStringValues.passivesQuestionDefault
+                                : widget.promotersQuestionText ??
+                                    DefaultStringValues
+                                        .promotersQuestionDefault,
+                        questionsTextStyle: widget.feedbackQuestionsTextStyle,
+                        callback: widget.callback,
+                        surveyResponseNumber: surveyResponseNumber,
+                        submitButtonText: widget.submitButtonText,
+                        submitButtonTextStyle: widget.submitButtonTextStyle,
+                        submitButtonStyle: widget.submitButtonStyle,
+                        feedbackInputStyle: widget.feedbackInputStyle,
+                        feedbackInputTextStyle: widget.feedbackInputTextStyle,
+                        selectedScoreVisible: widget.selectedScoreVisible,
+                        goBack: () => setState(() {
+                          pageIndex = 0;
+                        }),
+                      )
                     ]
                   : [
                       SurveyPage(
@@ -120,6 +123,7 @@ class _NPSSurveyDialogState extends State<NPSSurveyDialog> {
                           surveyResponse: (int answeredNumber) {
                             setState(() {
                               surveyResponseNumber = answeredNumber;
+                              pageIndex = 1;
                             });
                           })
                     ],

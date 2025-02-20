@@ -10,6 +10,7 @@ class FeedbackPage extends StatefulWidget {
       required this.question,
       required this.callback,
       required this.surveyResponseNumber,
+      required this.goBack,
       this.dialogContainerStyle,
       this.submitButtonText,
       this.questionsTextStyle,
@@ -31,6 +32,8 @@ class FeedbackPage extends StatefulWidget {
   final TextStyle? feedbackInputTextStyle;
   final bool? selectedScoreVisible;
 
+  final Function() goBack;
+
   @override
   State<FeedbackPage> createState() => _FeedbackPageState();
 }
@@ -51,12 +54,11 @@ class _FeedbackPageState extends State<FeedbackPage> {
             mainAxisSize: MainAxisSize.min,
             children: [
               NpsTop(
-                question: widget.question,
-                questionTextStyle: widget.questionsTextStyle,
-                surveyResponseNumber: widget.selectedScoreVisible ?? false
-                    ? widget.surveyResponseNumber
-                    : null,
-              ),
+                  question: widget.question,
+                  questionTextStyle: widget.questionsTextStyle,
+                  surveyResponseNumber: widget.selectedScoreVisible ?? false
+                      ? widget.surveyResponseNumber
+                      : null),
               FeedbackInput(
                   feedbackInputStyle: widget.feedbackInputStyle,
                   feedbackInputTextStyle: widget.feedbackInputTextStyle,
@@ -72,6 +74,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                 submitButtonText: widget.submitButtonText,
                 submitButtonTextStyle: widget.submitButtonTextStyle,
                 submitButtonStyle: widget.submitButtonStyle,
+                goBack: widget.goBack,
               ),
             ],
           ),
