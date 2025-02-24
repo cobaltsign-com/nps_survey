@@ -1,3 +1,7 @@
+## 1.3.0
+
+- Added back navigation between the two screens.
+
 ## 1.2.1
 
 - Replaced deprecated `withOpacity` usage with `withValues` method.
