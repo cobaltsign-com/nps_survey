@@ -1,3 +1,7 @@
+## 1.3.1
+
+- Minor formatting and comment updates
+
 ## 1.3.0
 
 - Added back navigation between the two screens.
